@@ -5,7 +5,7 @@ import pandas as pd
 
 st.write("test")
 
-con = duckdb.connection('data/portfelj.ddb')
+con = duckdb.connect('data/portfelj.ddb')
 
 df = con.sql("SELECT * FROM price;")
 
