@@ -7,7 +7,7 @@ st.write("test")
 
 con = duckdb.connect('data/portfelj.ddb')
 
-df = con.sql("SELECT * FROM price;")
+df = con.sql("SELECT * FROM price;").df()
 
 st.write(df)
 
